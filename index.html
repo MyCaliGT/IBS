@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Assets/Logoibs.png">
+    <title>Instituto Básico de Salud</title>
+    <!--Header y Home-->
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    <!--Fuente Gruesa-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" 
+    crossorigin><link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" 
+    crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+
+    <!--Iconos Header Responsive-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--Tarjetas tipo Vidrio-->
+    <script src="https://kit.fontawesome.com/240d5a2143.js" crossorigin="anonymous"></script>
+
+    <!--Reveal - Link para Efectos de transicion en el Main-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--Footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" 
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+
+    <!--Responsive-->
+    <link rel="stylesheet" href="./responsive.css">
+
+</head>
+<body onload="interval()">
+    <header id="Header">
+        <img src="./Assets/Logoibs.png" alt="" class="logo">
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <ul class="navigation-items">
+                <li><a href="#" data-text="Principal">Principal</a></li>
+                <li><a href="#" data-text="Programas y Requisitos">Programas y Requisitos</a></li>
+                <li><a href="#" data-text="Nosotros">Nosotros</a></li>
+                <li><a href="#" data-text="Historia">Historia</a></li>
+                <li><a href="#" data-text="Galeria">Galeria</a></li>
+                <li><a href="#" data-text="Contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="home">
+        <img src="./Assets/imagen1.jpg" alt="Imagen" id="slide-img">
+        <div class="content">
+            <h1>Instituto Básico de Salud</h1>
+            <h2>Licda. Concepción Solís Iriarte</h2>
+            <h3>Chimaltenango</h3>
+            <a href="./login.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Login
+            </a>
+        </div>
+
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+    </section>
+    <main>
+        <section class="container-inp">
+            <div class="container-info">
+                <div class="contenido" data-aos="zoom-in-up">
+                    <h2 class="titulo">Materias Cerfificadas</h2>
+                    <p class="p">El alumno debe estudiar y completar todas las materias y obtener una puntuación del 70 pts. 
+                        o más en cada una de las evaluaciones del curso</p>
+                </div>
+                <div class="imagen" data-aos="fade-up" data-aos-duration="3000">
+                    <img src="./Assets/experiencia.png" alt="Años de experiencia">
+                </div>
+            </div>
+        </section>
+
+        <section class="container-p">
+            <div class="container-informacion">
+                <div class="contenido" data-aos="zoom-in-up">
+                    <h2 class="titulo">Formación Técnica</h2>
+                    <p class="p">Incorporando en cada uno de sus estudiantes, una Actitud y Aptitud que sea la base de sus futuros 
+                        conocimientos científicos, las habilidades y destrezas, y un alto compromiso profesional</p>
+                </div>
+                <div class="imagen" data-aos="zoom-in">
+                    <img src="./Assets/practicaclinicacuatro.png" alt="Somos IBS">
+                </div>
+            </div>
+        </section>
+        
+        <section class="container-inp">
+            <div class="container-info">
+                <div class="contenido" data-aos="fade-up" data-aos-duration="3000">
+                    <h2 class="titulo">Psicóloga Permanente</h2>
+                    <p class="p">La cual proporciona apoyo, atención y orientación necesaria a los estudiantes y familia en caso de 
+                        necesitar esta atención específica.</p>
+                </div>
+                <div class="imagen" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                    <img src="./Assets/psicologapermanente.png" alt="Psicóloga Permanente">
+                </div>
+            </div>
+        </section>
+
+        <section class="container-p">
+            <div class="container-informacion">
+                <div class="contenido" data-aos="fade-up" data-aos-duration="3000">
+                    <h2 class="titulo">Bases Sólidas</h2>
+                    <p class="p">Atención a las personas en situaciones Médico-Quirúrgicas, Atención Integral a las Personas en los 
+                        diferentes Ciclos de Vida ( Materno - Infantil), y Atención de Enfermería al individuo , familia 
+                        y comunidad ( Nivel Preventivo).</p>
+                </div>
+                <div class="imagen" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                    <img src="./Assets/somosibsuno.png" alt="Clases en IBS">
+                </div>
+            </div>
+        </section>
+
+        <section class="container__icons">
+            <div class="icon-container">
+                <div class="tarjet">
+                    <div class="iconito">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <h2>14+<br>Facilitadores Calificados</h2>
+                </div>
+                <div class="tarjet">
+                    <div class="iconito">
+                        <i class="fa-solid fa-hand-holding-medical"></i>
+                    </div>
+                    <h2>4000+<br>Alumnos Trabajando</h2>
+    
+                </div>
+                <div class="tarjet">
+                    <div class="iconito">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h2>5000+<br>Alumnos Egresados</h2>
+                </div>
+                <div class="tarjet">
+                    <div class="iconito">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                    </div>
+                    <h2>23+<br>Años de Experiencia</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="frase">
+            <h2 data-text="&nbsp;'La empatía es la esencia de la enfermería'&nbsp;">&nbsp;'La empatía es la esencia de la enfermería'&nbsp;</h2>
+            <h3>Jean Watson</h3>
+        </div>
+        <section class="socialMedia">
+            <ul class="sci">
+                <li data-text="Facebook" data-color="#1877f2">
+                    <a href="https://es-la.facebook.com/people/Instituto-B%C3%A1sico-de-Salud-Chimaltenango
+                    /100082004101095/" target="_blank" rel="noopener noreferrer" class="facebook"><i class="fa fa-facebook" 
+                    aria-hidden="true"></i></a>
+                </li>
+                <li data-text="YouTube" data-color="#ff0000">
+                    <a href="#" class="youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                </li>
+                <li data-text="Twitter" data-color="#0099ff">
+                    <a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </li>
+                <li data-text="Instagram" data-color="#e4405f">
+                    <a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </section>
+        <div class="copyright-container">
+            <span class="copyright">MyCali- © Copyright 2022</span>
+        </div>
+    </footer>
+
+    <!--Main-->
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000
+        });
+    </script>
+    <!--Footer-->
+    <script src="./vanilla-tilt.min.js"></script>
+    <script src="./scriptfooter.js"></script>
+</body>
+</html>

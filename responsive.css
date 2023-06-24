@@ -1,0 +1,219 @@
+@media (max-width:1040px){
+    header{
+        padding: 12px 20px;
+    }
+    .home{
+        padding: 100px 20px;
+    }
+}
+
+@media(max-width: 923px){
+    .home .content{
+        width: 100%;
+    }
+    .home .content h1{
+        font-size: 2.5em;
+    letter-spacing: 4px;
+    }
+    .home .content h2{
+        font-size: 1.6em;
+    }
+    .home .content h3{
+        font-size: 1.2em;
+    }
+    .container__icons .icon-container .tarjet{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 800px){
+    /*-----INCIO HEADER RESPONSIVE*/
+    header .logo{
+        height: 85%;
+    }
+    header .navigation{
+        display: none;
+    }
+    header .navigation.active .navigation-items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        z-index: 1;
+        width: 100%;
+        height: 30em;
+        box-shadow: 0 5px 25px rgb(1 1 1 / 50%);
+        transition: 1s;
+        background: #141414;
+        position: relative;
+    }
+    header .navigation.active{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        margin-top: 55px;
+        background: rgba(1, 1, 1, 0.5);
+    }
+
+    .navigation .navigation-items li{
+        list-style: none;
+        text-align: center;
+    }
+    .navigation .navigation-items li a{
+        color: white;
+        text-decoration: none;
+        font-size: 1.4em;
+        display: inline-flex;
+        padding: .9em;
+        font-weight: 700;
+        transition: 0.5s;
+        margin: 0;
+    }
+    .navigation .navigation-items:hover li a{
+        color: rgba(73, 73, 73, 0.3);
+    }
+    .navigation .navigation-items li:hover a{
+        color: #000;
+        background: transparent;
+        font-family: 'Montserrat', sans-serif;
+        
+    }
+    .navigation .navigation-items li a:before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        font-family: 'Montserrat', sans-serif;
+        color: rgba(0, 0, 0, 0.1);
+        z-index: -1;
+        opacity: 0;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 400px;
+        transition: letter-spacing 0.5s, left 0.5s;/*Como aparecen las letras a los lados*/
+    }
+    .navigation .navigation-items li a:hover:before{
+        content: attr(data-text);
+        opacity: 1;
+        left: 50%;
+        letter-spacing: 10px;
+        width: 19em;
+        height: 20em;
+    }
+    .navigation .navigation-items li:nth-child(6n+1) a:before{
+        background-color: #0273b4;
+        background-image: linear-gradient(160deg,
+        #0273b4 0%, #46e6d3 100%);
+    }
+    .navigation .navigation-items li:nth-child(6n+2) a:before{
+        background-color: #0093E9;
+        background-image: linear-gradient(160deg,
+        #0093E0 0%, #80D0C7 100%);
+    }
+    .navigation .navigation-items li:nth-child(6n+3) a:before{
+        background-color: #7ac3ec;
+        background-image: linear-gradient(160deg,
+        #7ac3ec 0%, #1096e4 100%);
+    }
+    .navigation .navigation-items li:nth-child(6n+4) a:before{
+        background-color: #0273b4;
+        background-image: linear-gradient(160deg,
+        #0273b4 0%, #46e6d3 100%);
+    }
+    .navigation .navigation-items li:nth-child(6n+5) a:before{
+        background-color: #0093E9;
+        background-image: linear-gradient(160deg,
+        #0093E0 0%, #80D0C7 100%);
+    }
+    .navigation .navigation-items li:nth-child(6n+6) a:before{
+        background-color: #97d3f7;
+        background-image: linear-gradient(180deg,
+        #97d3f7 0%, #2aecd6 50%, #05426b 100%);
+    }
+    .menu-btn{
+        background: url(./Assets/icon.png)no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    .menu-btn.active{
+        z-index: 999;
+        background: url(./Assets/close.png)no-repeat;
+        background-size: 25px;
+        background-position: center;
+        transition: 0.3s ease;
+    }
+    /*-----FIN HEADER RESPONSIVE*/
+    .frase{
+        height: 90px;
+        width: 100%;
+    }
+    .frase h2{
+        font-size: 2.8vw;
+    }
+}
+@media(max-width: 500px){
+    /*-----INICIO HEADER RESPONSIVE*/
+    header .logo{
+        height: 85%;
+    }
+    .navigation .navigation-items li a{
+        font-size: 1.2em;
+        padding: 1.4em;
+        font-weight: 600;
+    }
+    .navigation .navigation-items li a:before{
+        font-size: 1.5em;
+    }
+    .navigation .navigation-items li a:hover:before{
+        width: 18em;
+        height: 35em;
+    }
+    /*-----FIN HEADER RESPONSIVE*/
+
+    .container-inp .container-info .titulo{
+        text-align: center;
+    }
+    .container-inp .container-info{
+        padding: 50px 8%; /*Verical - Horizontal*/
+    }
+    .container-p .container-informacion .titulo{
+        text-align: center;
+    }
+    .container-p .container-informacion{
+        padding: 50px 8%; /*Verical - Horizontal*/
+    }
+    .container-p .container-informacion .imagen{
+        order: 2;
+    }
+    .frase h2{
+        font-size: 3.8vw;
+    }
+}
+
+@media (max-width:321px){
+    .home .content h1{
+        font-size: 2.3em;
+    letter-spacing: 3px;
+    }
+    .home .content h2{
+        font-size: 1.2em;
+    }
+    .home .content h3{
+        font-size: 1em;
+    }
+}
